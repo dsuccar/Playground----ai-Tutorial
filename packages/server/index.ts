@@ -7,11 +7,11 @@ dotenv.config()
 
 const app = express();
 const port =  process.env.PORT || 3000;
-const apiKey = '234'
 
 
 app.get('/', (req: Request, res: Response) => {
-    res.send(process.env.OPENAI_API_KEY)
+    res.send('Hello World')
+    // process.env.OPENAI_API_KEY
 })
 
 app.listen(port, () => {

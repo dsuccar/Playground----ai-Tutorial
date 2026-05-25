@@ -1,1 +1,1 @@
-console.log("Hello via Bun!");
+87console.log("Hello World");
