@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react";
 
 
@@ -10,7 +11,14 @@ function App() {
     .then(data => setMessage(data.message))
   }, []);
 
-  return <p className="font-bold p-4 text-3xl">{message}</p>
+  return (
+  <div className="p-4">
+    <p className="font-bold text-3xl">{message}</p>
+    <Button> Click Me</Button>
+  </div>
+  )
+  
+  
 }
 
 export default App
